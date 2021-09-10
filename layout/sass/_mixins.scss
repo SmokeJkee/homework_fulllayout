@@ -1,0 +1,23 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; transform: translateY(-10px);}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; transform: translateY(-10px);}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; transform: translateY(-10px);}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; transform: translateY(-10px);}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+    }
+
+@mixin flex-position-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin main-line-center {
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform:translateX(-50%)
+}

@@ -1,0 +1,43 @@
+@mixin anim_navigation {
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $maincolor;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+    }
+    &:hover {
+        color: $maincolor;
+        &::after {
+            transform: scaleX(1);
+            transition: transform 0.3s;
+        }
+    }
+}
+
+@mixin anim_social-link {
+    &:hover {
+        color: $maincolor;
+        transform: rotate(15deg);
+        transform-origin: center;
+    }
+}
+
+@mixin anim-btn-transperent {
+    &:hover {
+        border: 1px solid $maincolor;
+        color: $maincolor;
+    }
+}
+
+@mixin anim-btn {
+    &:hover {
+        border: 1px solid rgb(202, 62, 62);
+        background-color: rgb(202, 62, 62);
+    }
+}
+
