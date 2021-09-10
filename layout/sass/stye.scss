@@ -80,10 +80,9 @@
 .axit {
     position: relative;
     z-index: 0;
-    background-image: url(../dist/img/axitbak.png);
+    background: url(../img/axitback.png) no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     &__overlay {
         position: absolute;
         background-color: rgba($color: #000000, $alpha: 0.7);
@@ -481,7 +480,7 @@
 
 .stylish {
     position: relative;
-    background: url(../dist/img/backgrounddis.png) no-repeat;
+    background: url(../img/backgrounddis.png) no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 0;
